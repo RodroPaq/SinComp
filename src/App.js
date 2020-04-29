@@ -1,28 +1,25 @@
-import React,{Fragment} from 'react';
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Menu from './components/Menu';
-import { useFetch } from './components/HookFetch';
 
 function App() {
-
-   var pathArray = window.location.pathname.split('/');
-
-  
-  const [dataEmpresa] = useFetch(
-     "http://vhali.com.ar/api/pedidos/local/de-niro-1" //+ pathArray[1]
-  );
-
-   const [data] = useFetch(
-     "http://vhali.com.ar/api/pedidos/menu/de-niro-1" //+ pathArray[1]
-   );
-
-
   return (
-     <Fragment>
-      <Header menu={data} empresa={dataEmpresa}/>
-       <Menu menu={data} />
-     </Fragment>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
