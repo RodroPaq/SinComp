@@ -1,7 +1,7 @@
 import React,{Fragment} from 'react';
 import './App.css';
 //import Header from './components/Header';
-import Menu from './components/Menu';
+//import Menu from './components/Menu';
 //import { useFetch } from './components/HookFetch';
 
 function App() {
@@ -20,8 +20,9 @@ function App() {
 
   return (
      <Fragment>
+       <p>prueba</p>
       {/*<Header menu={data} empresa={dataEmpresa}/>*/}
-        <Menu  />{/*menu={data} /> */}
+        {/*<Menu  />menu={data} /> */}
      </Fragment>
   );
 }
