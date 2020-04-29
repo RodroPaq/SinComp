@@ -21,7 +21,7 @@ function App() {
   return (
     <Fragment>
       <Header menu={data} empresa={dataEmpresa}/>
-		  {/* <Menu menu={data} /> */}
+		  <Menu menu={data} />
     </Fragment>
   );
 }
