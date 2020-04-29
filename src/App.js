@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import { useFetch } from './components/HookFetch';
 
 function App() {
 	
