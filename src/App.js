@@ -7,7 +7,7 @@ function App() {
 	
 	
 	var pathArray = window.location.pathname.split('/');
-
+	console.log(pathArray);
   
    const [dataEmpresa] = useFetch(
       "https://vhali.com.ar/api/pedidos/local/de-niro-1" //+ pathArray[1]
