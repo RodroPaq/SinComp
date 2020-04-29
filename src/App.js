@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import { useFetch } from './components/HookFetch';
@@ -10,19 +10,19 @@ function App() {
 
   
    const [dataEmpresa] = useFetch(
-      "https://vhali.com.ar/api/pedidos/local/de-niro-1" //+ pathArray[1]
+      "https://vhali.com.ar/api/pedidos/local/" + pathArray[1]
    );
 
     const [data] = useFetch(
-      "https://vhali.com.ar/api/pedidos/menu/de-niro-1" //+ pathArray[1]
+      "https://vhali.com.ar/api/pedidos/menu/" + pathArray[1]
     );
 	
 	
   return (
-    <div className="App">
+    <Fragment>
       <Header menu={data} empresa={dataEmpresa}/>
 	  <Menu menu={data} />
-    </div>
+    </Fragment>
   );
 }
 
