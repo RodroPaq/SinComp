@@ -1,10 +1,11 @@
 import React from 'react';
-import Productos from './Productos'
+//import Productos from './Productos'
 
-const Menu = () => {    
+const Menu = ({menu}) => {    
     return (  
         <div className="row mt-2 mb-5 mt-5">
             <div className="tab-content col-12" id="nav-tabContent"> 
+			<p>{i.Nombre}</p>
                 {/* {menu.map((i,k) => {
                    return(<Productos menu={i.Subcategorias} categoria={i.Nombre} key={k} dk={k}/>)
                 })}                                  */}
