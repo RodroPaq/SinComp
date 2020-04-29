@@ -1,0 +1,39 @@
+.list-group-item small{
+    font-size: 70%;
+}
+
+.list-group-item h6{
+    margin-bottom: 0;
+    color:#008F7A;
+}
+
+.list-group-item button,.list-group-item span{    
+    color:#FF9671;
+}
+
+.bg-4B4453{
+    background-color: #4B4453;
+}
+
+.border-color-FF9671{
+    border:1px solid #FF9671;
+}
+
+.input-group-append .btn, .input-group-prepend .btn{
+    z-index: 0;
+}
+
+/*PALETA DE COLORES
+
+#845EC2
+#D65DB1
+#FF6F91
+#FF9671
+#FFC75F
+#F9F871
+
+#2C73D2
+#0081CF
+#0089BA
+
+*/
