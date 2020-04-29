@@ -1,7 +1,7 @@
 import React from 'react';
-import Productos from './Productos'
+//import Productos from './Productos'
 
-const Menu = ({menu}) => {    
+const Menu = () => {    
     return (  
         <div className="row mt-2 mb-5 mt-5">
             <div className="tab-content col-12" id="nav-tabContent"> 
