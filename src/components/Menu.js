@@ -1,5 +1,5 @@
 import React from 'react';
-//import Productos from './Productos'
+import Productos from './Productos'
 
 const Menu = ({menu}) => {    
     return (  
@@ -7,8 +7,7 @@ const Menu = ({menu}) => {
             <div className="tab-content col-12" id="nav-tabContent"> 
 			
                  {menu.map((i,k) => {
-					 return(<p>{i.Nombre}</p>)
-                   {/*return(<Productos menu={i.Subcategorias} categoria={i.Nombre} key={k} dk={k}/>)*/}
+                   return(<Productos menu={i.Subcategorias} categoria={i.Nombre} key={k} dk={k}/>)
                 })}                                  
             </div>
         </div>

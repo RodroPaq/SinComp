@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Items from './Items'
+//import Items from './Items'
 
 
 
@@ -21,7 +21,7 @@ const Productos = ({menu,categoria,dk}) => {
                                 </div>
                             </div>
                         </li>
-                        <Items menu={i.Productos} />
+                        {/*<Items menu={i.Productos} />*/}
                         </Fragment>
                     )
                 })}
