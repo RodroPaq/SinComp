@@ -1,23 +1,17 @@
 import React from 'react';
+//import Productos from './Productos'
 
-const Header = ({menu,empresa}) => {   
+const Menu = () => {    
     return (  
-        <div className="nav-scroller fixed-top shadow-lg bg-4B4453">
-            <nav className="nav nav-underline">
-            {empresa.Imagen !== null ?
-            <img src={"Imagenes/" + empresa.Imagen} width="5%" className="d-inline-block align-top img-responsive ml-3 mt-1" alt="" />
-            :
-            <span className="nav-link active text-info" >{empresa.Nombre}</span>            
-            }
-            {menu.map((i,k) => {
-               let titulo = i.Nombre.replace(/ /g, "-");
-               let activeClass = (k === 0 ? "nav-link text-white active" : "nav-link text-white" );
-               return (<a className={activeClass} href={"#" + titulo} id={titulo + "-tab"} key={k}  data-toggle="tab" role="tab" aria-controls={titulo} aria-selected="true">{i.Nombre}</a>)               
-            })}
-             
-            </nav>
+        <div className="row mt-2 mb-5 mt-5">
+            <div className="tab-content col-12" id="nav-tabContent"> 
+            <p>|||||||||||||||||</p>               
+                {/* {menu.map((i,k) => {
+                   return(<Productos menu={i.Subcategorias} categoria={i.Nombre} key={k} dk={k}/>)
+                })}                                  */}
+            </div>
         </div>
     );
 }
  
-export default Header;
+export default Menu;
