@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Menu from './components/Menu';
 import { useFetch } from './components/HookFetch';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header menu={data} empresa={dataEmpresa}/>
+	  <Menu menu={data} />
     </div>
   );
 }
