@@ -10,11 +10,11 @@ function App() {
 
   
    const [dataEmpresa] = useFetch(
-      "https://vhali.com.ar/api/pedidos/local/" + pathArray[1]
+      "https://vhali.com.ar/api/pedidos/local/de-niro-1" //+ pathArray[1]
    );
 
     const [data] = useFetch(
-      "https://vhali.com.ar/api/pedidos/menu/" + pathArray[1]
+      "https://vhali.com.ar/api/pedidos/menu/de-niro-1" //+ pathArray[1]
     );
 	
 	
